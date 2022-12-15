@@ -1,6 +1,14 @@
 let express = require('express');
 let app = express();
-log("Hello World")
+console.log("Hello World")
+
+app.get("root",
+
+    function (req, res) {
+        res.send("Hello Express")
+    }
+    
+)
 
 
 
@@ -32,9 +40,4 @@ log("Hello World")
 
 
 
-
-
-
-
-
- module.exports = app;
+module.exports = app;
